@@ -1,0 +1,84 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# SECRETS - NEVER COMMIT THESE
+.env
+.env.local
+config/database.yml
+config/secrets.yml
+.streamlit/secrets.toml
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# ============================================
+# DATA - For Web Deployment
+# ============================================
+
+# Raw GTFS downloads (too large, will download on startup)
+data/raw/*.zip
+data/raw/*.pb
+
+# Processed files (generated on the fly)
+data/processed/*.csv
+data/processed/*.parquet
+
+# External data (downloaded via API)
+data/external/*.csv
+
+# ============================================
+# KEEP THESE - Needed for web app to work
+# ============================================
+
+# Small sample/demo data for testing
+!data/sample/**
+
+# Pre-computed features (if <10MB each)
+!data/features/*.csv
+!data/features/*.parquet
+
+# Static reference data
+!data/static/**
+
+
+# Keep models under 100MB (Streamlit Cloud limit)
+# If models are >100MB, upload to cloud storage instead
+models/*.pkl
+models/*.joblib
+
+# Model training artifacts (don't need in production)
+models/logs/
+models/checkpoints/
+models/experiments/
+
+*.log
+logs/
+temp/
+*.tmp
+
+# Database dumps
+*.sql.gz
+*.dump
