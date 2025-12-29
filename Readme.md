@@ -608,9 +608,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 Computer Science Graduate | Dalhousie University  
 Halifax, Nova Scotia, Canada
 
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your LinkedIn Profile](https://linkedin.com/in/yourprofile)
-- Email: your.email@example.com
+- Email: hetangpatel24@gmail.com
 
 ---
 
